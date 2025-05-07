@@ -1,0 +1,23 @@
+.iframe-wrapper {
+    width: 1024.5px;
+    height: 576px;
+    overflow: hidden;
+}
+
+.home{
+    width: 1366px;
+    height: 768px;
+    border: solid black 2px;
+    background: white;
+    position: absolute;
+    align-content: center;
+    transform: scale(0.75);
+    transform-origin: top left;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
