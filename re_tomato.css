@@ -1,0 +1,579 @@
+.header {
+    position: fixed;
+    top: -1px;
+    left:0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    padding: 10px 0;
+    padding-top: 25px;
+    border-bottom: solid 1.5px black;
+    align-items: center;
+}
+
+body{
+    padding-top: 60px;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 2px;
+    border: 4px solid white;
+    border-radius: 50px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #adadad;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #adadad;
+}
+
+.font-1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.font-2 {
+    font-family: 'Pretendard', sans-serif;
+}
+  
+.font-3 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+  
+.font-4 {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.font-5 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.font-6 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+  
+.font-7 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-8{
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+}
+
+.font-9{
+    font-family: "PFStardust", sans-serif;
+}
+
+.font-10{
+  font-family: "Noto Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.noline{
+    text-decoration: none;
+    color: black;
+}
+
+.please{
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    margin-left: -300px;
+}
+
+.menuline{
+    position: relative;
+    top: -7px;
+    left: 25px;
+    bottom:20px;
+}
+
+.webname{
+    position: relative;
+    top: -5px;
+    left:825px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.next{
+    position: relative;
+    top: 50px;
+    left:1280px;
+    cursor: pointer;
+}
+
+.move{
+    transition: transform 0.3 ease;
+}
+
+.move:hover{
+    transform: translateX(10px);
+}
+
+.nameloc{
+    position: relative;
+}
+
+.name{
+    position: relative;
+    font-size: 45px;
+    font-weight: 800;
+    left: 517px;
+    top: 30px;
+}
+
+.transloc{
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1;
+    left: 0px;
+    top: 20px;
+}
+
+.bigone{
+    position: absolute;
+    width: 110px;
+    height: auto;
+    left: 330px;
+    top: 305px;
+}
+
+.smallone{
+    position: absolute;
+    width: 90px;
+    height: auto;
+    left: 950px;
+    top: 600px;
+}
+
+.pic{
+    position: absolute;
+    width: 310px;
+    height: auto;
+    left: 535px;
+    top:370px
+}
+
+.box1{
+    position: relative;
+    width: 305px;
+    height: 50px;
+    left: 34px;
+    top: 215px;
+    padding-inline: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid black 1.8px;
+    background-color: white;
+}
+
+.box2{
+    position: relative;
+    width: 305px;
+    height: 100px;
+    padding-inline: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: solid black 1.8px;
+    background-color: white;
+}
+
+.b2{
+    position: absolute;
+    left: 40px;
+    top: 580px;
+}
+
+.explainname{
+    position: absolute;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.what1{
+    position: absolute;
+    font-weight: 600;
+    font-size: 27px;
+    text-align: right;
+    left: 240px;
+    top: 20px;
+    width: 100px;
+}
+
+.what2{
+    position: absolute;
+    font-weight: 600;
+    font-size: 21px;
+    text-align: right;
+    left: 130px;
+    top: 50px;
+    letter-spacing: 1;
+}
+
+.many{
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.t{
+    color: tomato;
+}
+
+.link{
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 14px;
+    text-align: center;
+    font-style: bold;
+    left: 1040px;
+    top: 405px;
+}
+
+.line{
+    position: absolute;
+    width: 1200px;
+    border: solid black 1px;
+    top: 780px;
+    left: 70px;
+}
+
+.start{
+    position: absolute;
+    left: 130px;
+    top: 850px;
+    width: 210px;
+    height: auto;
+}
+
+.number{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border: solid black 2px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 42px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.recipebox{
+    position: absolute;
+    border: solid black 1.8px;
+    padding-inline: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+.first{
+    top: 920px;
+    left: 240px;
+    width: 985px;
+    height: 220px;
+}
+
+.num1{
+    left: 50px;
+    top: 50px;
+}
+
+.explain{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.ex1-1{
+    left: 120px;
+    top: 40px;
+}
+
+.ex1-2{
+    left: 220px;
+    top: 130px;
+}
+
+.ex1-3{
+    left: 450px;
+    top: 130px;
+}
+
+.toma{
+    position: relative;
+    left: 280px;
+    top: 20px;
+    width: 80px;
+    height: auto;
+}
+
+.chive{
+    position: relative;
+    left: 325px;
+    top: 0px;
+    width: 110px;
+    height: auto;
+}
+
+.next1{
+    position: absolute;
+    z-index: 2;
+    left: 960px;
+    top:1162px;
+}
+
+.num2{
+    position: absolute;
+    top: 1255px;
+    left: 900px;
+    z-index: 3;
+}
+
+.second{
+    top: 1260px;
+    left: 160px;
+    width: 850px;
+    height: 200px;
+}
+
+.ex2-1{
+    left: 450px;
+    top: 40px;
+}
+
+.ex2-2{
+    left: 110px;
+    top: 130px;
+}
+
+.egg{
+    position: relative;
+    left: 560px;
+    top: 7px;
+    width: 70px;
+    height: auto;
+}
+
+.next2{
+    position: absolute;
+    z-index: 2;
+    left: 348px;
+    top:1482px;
+}
+
+.num3{
+    top: 70px;
+    left: 60px;
+}
+
+.third{
+    top: 1585px;
+    left: 295px;
+    width: 920px;
+    height: 208px;
+}
+
+.ex3-1{
+    left: 130px;
+    top: 60px;
+}
+
+.ex3-2{
+    position: absolute;
+    left: 350px;
+    top: 60px;
+}
+
+.ex3-3{
+    left: 170px;
+    top: 140px;
+}
+
+.pan{
+    position: relative;
+    left: 200px;
+    top: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.next3{
+    position: absolute;
+    z-index: 2;
+    left: 760px;
+    top:1810px;
+}
+
+.num4{
+    position: absolute;
+    left: 760px;
+    top: 1930px;
+    z-index: 3;
+}
+
+.tool{
+    position: absolute;
+    left: 960px;
+    top: 1915px;
+    z-index: 3;
+    width: 80px;
+    height: auto;
+}
+
+.fourth{
+    top: 1940px;
+    left: 245px;
+    width: 900px;
+    height: 180px;
+}
+
+.ex4-1{
+    left: 105px;
+    top: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.next4{
+    position: absolute;
+    z-index: 2;
+    left: 348px;
+    top:2135px;
+}
+
+.num5{
+    position: absolute;
+    left: 80px;
+    top: 2315px;
+    z-index: 3;
+}
+
+.fifth{
+    top: 2240px;
+    left: 105px;
+    width: 1090px;
+    height: 190px;
+}
+
+.ex5-1{
+    left: 80px;
+    top: 50px;
+}
+
+.ex5-2{
+    left: 450px;
+    top: 115px;
+}
+
+.good{
+    position: absolute;
+    left: 940px;
+    top: 50px;
+    z-index: 3;
+}
+
+.done{
+    position: absolute;
+    left: 1170px;
+    top: 2520px;
+    width: 110px;
+    height: auto;
+}
+
+.under{
+    position:absolute;
+    border: solid 1.2px black;
+    top: 2620px;
+    left:0;
+    margin: auto 0;
+    width: 99.9%;
+}
+
+.b1{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    top: -10px;
+    left: 2px;
+}
+
+.bottom1{
+    position: absolute;
+    font-weight: 300;
+    font-size: 18px;
+    left: 40px;
+    top: 2705px;
+    padding-bottom: 30px;
+    text-align: left;
+    width: fit-content;
+    opacity: 0.8;
+}
+
+.bottom2{
+    position: absolute;
+    font-weight: 300;
+    font-size: 18px;
+    left: 1100px;
+    top: 2705px;
+    padding-bottom: 30px;
+    text-align: right;
+    width: fit-content;
+    opacity: 0.8;
+}

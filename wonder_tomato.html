@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>TOMATO</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Doto:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Special+Gothic+Expanded+One&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="wonder_tomato.css">
+ 
+</head>
+
+<body>
+  <header class="header">
+    <button class="open-btn" onclick="openPanel()"><img src="web/menuline.png" class="menuline"></button>
+    <a href="aboutveg_home.html" class="noline please"><img src="web/webname.png" class="webname"></a>
+  </header>
+  
+  <a href="parsley.html" class="noline">
+    <img src="web/arrow2.png" class="next move">
+  </a>
+  
+  <img src="web/background2.png" class="bg bg-layer">
+
+  <img src="web/after/tomato14.png" class="tomato">
+
+  <img src="web/balloon.png" class="balloon">
+  <img src="web/balloon2.png" class="balloon3">
+
+  <div class="wave-container">
+    <span class="font-1 d wave">D</span><span class="font-6 o wave">o</span><span class="font-3 y wave">y</span><span class="font-2 o2 wave">o</span><span class="font-2 u wave">u</span>
+    <span class="font-7 w wave">w</span><span class="font-3 a wave">a</span><span class="font-2 n wave">n</span><span class="font-6 t wave">t</span>
+    <span class="font-2 t2 wave">t</span><span class="font-3 o3 wave">o</span><span class="font-6 k wave">k</span><span class="font-1 n2 wave">n</span><span class="font-3 o4 wave">o</span><span class="font-1 w2 wave">w</span>
+    <span class="font-7 m wave">m</span><span class="font-4 o5 wave">o</span><span class="font-6 r wave">r</span><span class="font-1 e wave">e</span>
+    <span class="font-7 i wave">i</span><span class="font-2 n3 wave">n</span><span class="font-6 f wave">f</span><span class="font-7 o6 wave">o</span><span class="font-3 qu wave">?</span>
+  </div>
+
+  <span class="font-2 red names">TOMATO's</span><span class="font-2 life">SECRET...<span class="font-9">★</span></span>
+
+  <span class="font-2 about">ABOUT<br><span class="red">TOMATO</span>-!!!</span>
+
+  <span class="font-9 it">토마토는 ...</span>
+  <p class="font-9 it2">어떤 비밀이<br>있을까..?</p>
+
+  <div class="image-container">
+    <img src="web/after/book.png" class="lift reci">
+    <div class="font-8 overlay-text reci-t">Recipe -!!</div>
+  </div>
+
+  <div class="image-container">
+    <img src="web/after/leaf.png" class="lift vege">
+    <div class="font-8 overlay-text vege-t">About<br>vegetables-!!</div>
+  </div>
+
+  <span class="from font-8"></span>
+
+  <div id="container">
+    <img id="randomImage" class="img-size floatpic">
+    <p class="content font-2" id="description">토마토의 비밀은..?!</p>
+    <button onclick="showRandom()" class="font-2 bu lift2">몰랐던 사실 알아보기</button>
+  </div>
+
+  <div>
+    <button class="font-9 bu2 lift2" onclick="openPopup2()">정보 전체보기</button>
+  </div>
+
+  <div class="popup-background" id="popup2">
+    <div class="popup-content2">
+      <span class="font-2 infotitle">About</span>
+      <span class="font-2 infotitle2">Tomato!</span><img src="web/after/first-1.png" class="mato"><br>
+      <br>
+
+      <table class="popup-table">
+        <tr>
+          <th><img src="web/after/tomato14.png" class="mainmato"><img src="web/wow.png" class="balloon2"><span class="font-1 smallt">All information about<br>TOMATO!</span></th>
+          <td><span class="nu">1</span><img src="pic/toma-1.png" class="tpic"><p class="font-1 entire">★ both vegetable and fruit!</p><p class="font-2 infolist">채소이기도 하고, 과일이기도 해요~</p></td>
+          <td><span class="nu">2</span><img src="pic/toma-2.png" class="tpic"><p class="font-1 entire">★ tomato is beautiful!</p><p class="font-2 infolist">원래 관상용 식물이었어요!!</p></td>
+        </tr>
+        <tr>
+          <td><span class="nu">3</span><img src="pic/toma-3.png" class="tpic"><p class="font-1 entire">★ poison in tomato!?</p><p class="font-2 infolist">옛날에는 독이 있다며 먹지<br>않았어요..</p></td>
+          <td><span class="nu">4</span><img src="pic/toma-4.png" class="tpic"><p class="font-1 entire">★ how can it be so colorful!</p><p class="font-2 infolist">주황, 노랑.. 심지어는 보라색<br>토마토까지!?</p></td>
+          <td><span class="nu">5</span><img src="pic/toma-5.png" class="tpic"><p class="font-1 entire">★ tomato is golden apple!</p><p class="font-2 infolist">처음 유럽으로 들어왔을 때<br>황금사과라 불렸어요.</p></td>
+        </tr>
+        <tr>
+          <td><span class="nu">6</span><img src="pic/toma-6.png" class="tpic"><p class="font-1 entire">★ tomatoes are so versatile!</p><p class="font-2 infolist">거의 모든 유럽국가의 음식에는<br>우리나라의 마늘처럼 토마토가<br>기본적인 재료로 들어가요~</p></td>
+          <td><span class="nu">7</span><img src="pic/toma-7.png" class="tpic"><p class="font-1 entire">★ don't believe wrong thing!</p><p class="font-2 infolist">토마토 효과(아무 근거 없이 추측만으로 잘못된 신념을 굳게 믿는<br>심리)"라는 심리학 용어가 있어요!!</p></td>
+          <td><span class="nu">8</span><img src="pic/toma-8.png" class="tpic"><p class="font-1 entire">★ good dream with tomato!</p><p class="font-2 infolist">토마토와 관련된 꿈들은, 대부분 긍정적이고 좋은 일이 일어날<br>길몽이에요! 축하해요 ~ :></p></td>
+        </tr>
+        <tr>
+          <td><span class="nu">9</span><img src="pic/toma-9.png" class="tpic"><p class="font-1 entire">★ clean with tomato!</p><p class="font-2 infolist">토마토의 꼭지로 녹이 슨 물건의<br>녹을 깨끗하게 제거할 수 있답니다!</p></td>
+          <td><span class="nu2">10</span><img src="pic/toma-10.png" class="tpic"><p class="font-1 entire">★ i'm much more use it!</p><p class="font-2 infolist">국립국어원 영어 표기법을 적용<br>하면 "터마터/터마토"이지만,<br>"토마토"를 규범 표기로 정했어요.</p></td>
+          <td><span class="nu2">11</span><img src="pic/toma-11.png" class="tpic"><p class="font-1 entire">★ granny, do... domado?</p><p class="font-2 infolist">20세기까지는 "도마도"라고<br>부르기도 했답니다. 이것이 고령층이 토마토를 도마도라고 하는<br>이유중 하나예요.</p></td>
+        </tr>
+        <tr>
+          <td><span class="nu2">12</span><img src="pic/toma-12.png" class="tpic"><p class="font-1 entire">★ apple of love in Europe!</p><p class="font-2 infolist">토마토는 한때 유럽에서 "사랑의 사과"라고 불렸으며, 최음 효과가 있다고 믿어졌어요.</p></td>
+          <td><span class="nu2">13</span><img src="pic/toma-13.png" class="tpic"><p class="font-1 entire">★ Heinz is a perfectionist..</p><p class="font-2 infolist">하인즈 토마토 케첩에는 속도 제한이 있어요! 0.028mph 이상으로 흐르면, 너무 묽다고 판단되어<br>탈락됩니다~</p></td>
+          <td><span class="nu2">14</span><img src="pic/toma-14.png" class="tpic"><p class="font-1 entire">★ too much..</p><p class="font-2 infolist">토마토는 7500가지 이상의<br>품종이 있어요!!</p></td>
+        </tr>
+        <tr>
+          <td><span class="nu2">15</span><img src="pic/toma-15.png" class="tpic"><p class="font-1 entire">★ they are tomato lover!</p><p class="font-2 infolist">미국 뉴저지 주의 공식 주 채소<br>이고, 토마토주스는 오하이오 주의 공식 주 음료랍니다! 토마토를<br>정말 좋아하나봐요..</p></td>
+          <td><span class="nu2">16</span><img src="pic/toma-16.png" class="tpic"><p class="font-1 entire">★ we are family!</p><p class="font-2 infolist">감자, 가지와 친척 관계랍니다~!</p></td>
+          <td><span class="nu2">17</span><img src="pic/toma-17.png" class="tpic"><p class="font-1 entire">★ i think tomato was shamed~</p><p class="font-2 infolist">덜 익은 토마토는 사과, 바나나와 함께 봉지에 넣어보세요! 금방<br>빨간 토마토가 돼요!</p></td>
+        </tr>
+        <tr>
+          <td><span class="nu2">18</span><img src="pic/toma-18.png" class="tpic"><p class="font-1 entire">★ does it catch a cold too?</p><p class="font-2 infolist">냉장 보관은 토마토의 맛을 떨어<br>뜨려요! 하지만, 오래 보관하고<br>싶다면, 냉장고에 넣어두세요!</p></td>
+          <td><span class="nu2">19</span><img src="pic/toma-19.png" class="tpic"><p class="font-1 entire">★ will you marry me?</p><p class="font-2 infolist">이탈리아에서는 토마토 바구니를 가져다주는 것이 청혼을 의미<br>한다고 하네요~</p></td>
+          <td><span class="nu2">20</span><img src="pic/toma-20.png" class="tpic"><p class="font-1 entire">★ tomato in space..</p><p class="font-2 infolist">1984년, 우주 왕복선 챌린저호<br>에서 싹을 틔우고 열매를 맺었대요~!!</p></td>
+        </tr>
+      </table>
+
+      <p class="font-7 last">All the information about tomatoes!</p>
+
+      <button class="close-btn" onclick="closePopup2()"><img src="web/x.png" class="cbu2"></button>
+    </div>
+  </div>
+
+  <div>
+    <button class="font-9 bu3 lift2" onclick="openPopup()">사용 방법?</button>
+  </div>
+
+  <div class="popup-background" id="popup">
+    <div class="popup-content">
+      <img src="web/how.png" class="how">
+      <span class="font-9 ex1">여기서는 채소들에대해 우리가 몰랐던 사실들을 랜덤으로 알려드려요!!</span>
+      <span class="font-2 number ex2">1</span><span class="font-2 ex2-1">화면에 원하는 채소가 보이시나요?</span>
+      <span class="font-2 number ex3">2</span><span class="font-2 ex3-1">그 채소의 비밀을 알고싶다면, [<br>클릭해보세요!</span><span class="font-2 ex3-2">몰랐던 사실 알아보기</span><span class="font-2 ex3-3">] 를</span>
+      <span class="font-2 number ex4">3</span><span class="font-2 ex4-1">채소에 대한 사실 [<br>무작위로 나타납니다.</span><img src="web/after/aha.png" class="pic4"><span class="font-2 ex4-2">] 과 함께, 그림 [</span><img src="web/after/crayon.png" class="pic4-1"><span class="font-2 ex4-3">] 설명이</span>
+      <span class="font-2 number ex5">4</span><span class="font-2 ex5-1">채소의 여러 흥미로운 사실들을 알아보세요!</span>
+      <span class="font-2 number ex6">+</span><span class="font-2 ex6-1">한 번에 모두 보고싶다면, [</span><span class="font-2 ex6-2">정보 전체보기</span><span class="font-2 ex6-3">] 를 눌러보세요~</span>
+      
+      <button class="close-btn" onclick="closePopup()"><img src="web/x.png" class="cbu"></button>
+    </div>
+  </div>
+
+  <div id="myPanel" class="side-panel">
+    <button class="close-btn3" onclick="closePanel()">✕</button>
+    <a href="aboutveg_home.html" class="img-link"><img src="web/house.png" class="sidehome"></a>
+    <a href="re_tomato.html" class="img-link"><img src="web/after/book.png" class="hat"></a>
+    <a href="tomato.html" class="img-link"><img src="web/after/leaf.png" class="leaf"></a>
+
+    <span class="contname">Vegetable List</span>
+
+    <div class="position">
+      <div id="spin"><a href="wonder_tomato.html" class="sideline">토마토 · TOMATO</a><span class="look spin1">★</span></div>
+      <div id="spin"><a href="#" class="sideline">감자 · POTATO</a><span class="look spin2">★</span></div>
+      <div id="spin"><a href="#" class="sideline">파슬리 · PARSLEY</a><span class="look spin3">★</span></div>
+      <div id="spin"><a href="#" class="sideline">브로콜리 · BROCCOLI</a><span class="look spin4">★</span></div>
+      <div id="spin"><a href="#" class="sideline">피망 · BELLPEPPER, PAPRIKA</a><span class="look spin5">★</span></div>
+      <div id="spin"><a href="#" class="sideline">가지 · EGGPLANT</a><span class="look spin6">★</span></div>
+      <div id="spin"><a href="#" class="sideline">버섯 · MUSHROOM</a><span class="look spin7">★</span></div>
+      <div id="spin"><a href="#" class="sideline">당근 · CARROT</a><span class="look spin8">★</span></div>
+      <div id="spin"><a href="#" class="sideline">양파 · ONION</a><span class="look spin9">★</span></div>
+      <div id="spin"><a href="#" class="sideline1">샐러리 · SALARY</a><span class="look spin10">★</span></div>
+    </div>
+
+    <span class="contname2">Let's find out about vegetables~</span>
+   </div>
+
+  <script>
+    const items = [
+      { image: 'pic/toma-1.png', description: '채소이기도 하고, 과일이기도 해요~' },
+      { image: 'pic/toma-2.png', description: '원래 관상용 식물이었어요!!' },
+      { image: 'pic/toma-3.png', description: '옛날에는 독이 있다며 먹지 않았어요..' },
+      { image: 'pic/toma-4.png', description: '주황, 노랑.. 심지어는 보라색 토마토까지!?' },
+      { image: 'pic/toma-5.png', description: '처음 유럽으로 들어왔을 때 황금사과라 불렸어요.' },
+      { image: 'pic/toma-6.png', description: '거의 모든 유럽국가의 음식에는 우리나라의 마늘처럼<br>토마토가 기본적인 재료로 들어가요~' },
+      { image: 'pic/toma-7.png', description: '"토마토 효과(아무 근거 없이 추측만으로 잘못된 신념을<br>굳게 믿는 심리)"라는 심리학 용어가 있어요!!' },
+      { image: 'pic/toma-8.png', description: '토마토와 관련된 꿈들은, 대부분 긍정적이고 좋은 일이<br>일어날 길몽이에요! 축하해요 ~ :>'},
+      { image: 'pic/toma-9.png', description: '토마토의 꼭지로 녹이 슨 물건의 녹을<br>깨끗하게 제거할 수 있답니다!'},
+      { image: 'pic/toma-10.png', description: '국립국어원 영어 표기법을 적용하면 "터마터/터마토"이지만,<br>"토마토"를 규범 표기로 정했어요.'},
+      { image: 'pic/toma-11.png', description: '20세기까지는 "도마도"라고 부르기도 했답니다.<br>이것이 고령층이 토마토를 도마도라고 하는 이유중 하나예요.'},
+      { image: 'pic/toma-12.png', description: '토마토는 한때 유럽에서 "사랑의 사과"라고 불렸으며,<br>최음 효과가 있다고 믿어졌어요.'},
+      { image: 'pic/toma-13.png', description: '하인즈 토마토 케첩에는 속도 제한이 있어요! 0.028mph<br>이상으로 흐르면, 너무 묽다고 판단되어 탈락됩니다~'},
+      { image: 'pic/toma-14.png', description: '토마토는 7500가지 이상의 품종이 있어요!!'},
+      { image: 'pic/toma-15.png', description: '미국 뉴저지 주의 공식 주 채소이고, 토마토주스는 오하이오<br>주의 공식 주 음료랍니다! 토마토를 정말 좋아하나봐요..'},
+      { image: 'pic/toma-16.png', description: '감자, 가지와 친척 관계랍니다~!'},
+      { image: 'pic/toma-17.png', description: '덜 익은 토마토는 사과, 바나나와 함께 봉지에 넣어보세요!<br>금방 빨간 토마토가 돼요!'},
+      { image: 'pic/toma-18.png', description: '냉장 보관은 토마토의 맛을 떨어뜨려요!<br>하지만, 오래 보관하고 싶다면, 냉장고에 넣어두세요!'},
+      { image: 'pic/toma-19.png', description: '이탈리아에서는 토마토 바구니를 가져다주는 것이<br>청혼을 의미한다고 하네요~'},
+      { image: 'pic/toma-20.png', description: '1984년, 우주 왕복선 챌린저호에서<br>싹을 틔우고 열매를 맺었대요~!!'}
+    ];
+
+    function showRandom() {
+      const randomItem = items[Math.floor(Math.random() * items.length)];
+      document.getElementById("randomImage").src = randomItem.image;
+      document.getElementById("description").textContent = randomItem.description;
+      document.getElementById("description").innerHTML = randomItem.description;
+    }
+
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    function openPopup2() {
+      document.getElementById("popup2").style.display = "block";
+    }
+
+    function closePopup2() {
+      document.getElementById("popup2").style.display = "none";
+    }
+
+    function openPanel() {
+      document.getElementById("myPanel").style.width = "30%";
+    }
+
+    function closePanel() {
+      document.getElementById("myPanel").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>

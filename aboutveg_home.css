@@ -1,0 +1,702 @@
+  
+    body {
+        margin: 0;
+        height: 100vh;
+        background-image: url('web/BG.jpg');
+        background-size: cover;
+        background-position: absolute;
+        background-repeat: no-repeat;}
+  
+        .background-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .tomato {
+    top: 40px;
+    left: 60px;
+    width: 135px;
+    height: auto;
+  }
+  
+  .potato {
+    top: 235px;
+    left: 75px;
+    width: 120px;
+    height: auto;
+  }
+  
+  .mushroom {
+    top: 390px;
+    left: 620px;
+    width: 165px;
+    height: auto;
+  }
+  
+  .parsley {
+    top: 430px;
+    left: 50px;
+    width: 155px;
+    height: auto;
+  }
+  
+  .broccoli{
+    top: 40px;
+    left: 270px;
+    width: 235px;
+    height: auto;
+  }
+  
+  .bellpepper{
+    top: 342px;
+    left: 275px;
+    width: 250px;
+    height: auto;
+  }
+  
+  .eggplant{
+    top: 25px;
+    left: 605px;
+    width: 165px;
+    height: auto;
+  }
+  
+  .carrot{
+    top: 75px;
+    left: 837px;
+    width: 175px;
+    height: auto;
+  }
+  
+  .onion{
+    top: 25px;
+    left: 1110px;
+    width: 215px;
+    height: auto;
+  }
+  
+  .celery{
+    top: 265px;
+    left: 1125px;
+    width: 135px;
+    height: auto;
+  }
+  
+  .circle-number {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: light;
+    border: solid black 1.6px;
+    font-size: 20.5px;
+    z-index: 1;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    user-select: none;
+  }
+  
+  .tomato-num {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  
+  .potato-num {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 220px;
+  }
+  
+  .parsley-num {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 420px;
+  }
+  
+  .broccoli-num {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 255px;
+  }
+  
+  .bellpepper-num {
+    position: absolute;
+    margin-left: 490px;
+    margin-top: 330px;
+  }
+  
+  .eggplant-num {
+    position: absolute;
+    margin-left: 565px;
+    margin-top: 15px;
+  }
+  
+  .mushroom-num {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 565px;
+  }
+  
+  .carrot-num {
+    position: absolute;
+    margin-left: 910px;
+    margin-top: 15px;
+  }
+  
+  .onion-num {
+    position: absolute;
+    margin-left: 1315px;
+    margin-top: 15px;
+  }
+  
+  .celery-num {
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 250px;
+  }
+  
+  .veg-img {
+    transition: transform 0.15s ease;
+    transform-origin: top center;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .veg-img:hover {
+    transform: scale(1.05);
+    z-index: 100;
+    position: relative;
+  }
+  
+  .veg-group {
+    position: absolute;
+    user-select: none;
+  }
+  
+  .hover-box {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .hover-info {
+    position: absolute;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    border: solid black 1.5px;
+    z-index: 100;
+  }
+  
+  .hover-box:hover .hover-info {
+    opacity: 1;
+  }
+  
+  .tomato-info{
+    position: absolute;
+    left: 45px;
+    top: 150px;
+  }
+  
+  .potato-info{
+  position: absolute;
+  bottom: -255px;
+  left: 40px;
+  }
+  
+  .parsley-info{
+    position: absolute;
+    left: 45px;
+    bottom: -450px;
+  }
+  
+  .broccoli-info{
+    position: absolute;
+    left: 293px;
+    bottom: -83px;
+    width: 52px;
+    text-align: center;
+  }
+  
+  .bellpepper-info{
+    position: absolute;
+    left: 490px;
+    bottom: -370px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .eggplant-info{
+    position: absolute;
+    left: 625px;
+    top: 70px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .mushroom-info{
+    position: absolute;
+    left: 605px;
+    bottom: -405px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .carrot-info{
+    position: absolute;
+    left: 865px;
+    bottom: -100px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .onion-info{
+    position: absolute;
+    left: 1080px;
+    bottom: -30px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .celery-info{
+    left: 1090px;
+    bottom: -270px;
+    width: 40px;
+    text-align: center;
+  }
+  
+  .menu-container{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-text{
+    position: absolute;
+    top: 253px;
+    left: 655px;
+    padding: 4px 8px;
+    font-size: 40px;
+    font-weight: lighter;
+    
+  }
+  
+  .menu-line{
+    position: absolute;
+    top: 292px;
+    left: 600px;
+    user-select: none;
+  }
+  
+  .font-1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+  }
+  
+  .font-2 {
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  .font-3 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-4 {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-5 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .font-6 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .font-7 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .m{
+    position: absolute;
+    top: 9px;
+    user-select: none;
+  }
+  
+  .e{
+    position: absolute;
+    left: 55px;
+    top: 11px;
+    font-weight: 400;
+    user-select: none;
+  }
+  
+  .n{
+    position: absolute;
+    font-size: 33px;
+    left: 80px;
+    top: 20px;
+    user-select: none;
+  }
+  
+  .u{
+    position: absolute;
+    font-size: 35px;
+    left: 112px;
+    top: 7px; 
+    user-select: none;
+  }
+  
+  .lift{
+    transition: transform 0.3 ease;
+  }
+  
+  .lift:hover{
+    transform: translateY(-10px);
+  }
+  
+  .here{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .line{
+    text-decoration: none;
+  }
+  
+  .line:hover {
+    text-decoration: underline;
+    transition: transform 0.3 ease;
+  }
+  
+  .arrow {
+    opacity: 0;
+    transition: opacity 1 ease;
+    display: inline;
+  }
+  
+  .here:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .arrow-size{
+    position: absolute;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 6px;
+  }
+  
+  .allmenu{
+    position: absolute;
+    left: -7px;
+    top: 3px;
+  }
+  
+  .sentence{
+    position: absolute;
+    left: 1311px;
+    top: 240px;
+    user-select: none;
+    transform: scale(90%);
+  }
+  
+  .allname{
+    position: absolute;
+    top: -2px;
+    left: 27px;
+  }
+
+  @keyframes wave {
+  0%, 15%, 100% { transform: translateY(0); }
+  10% { transform: translateY(-10px); }
+}
+
+.wave-container {
+  display: flex;
+  gap: 10px;
+}
+
+.wave{
+  animation: wave 9s steps(1,end) infinite;
+}
+
+.wave:nth-child(1) { animation-delay: 0s;}
+.wave:nth-child(2) { animation-delay: 0.5s;}
+.wave:nth-child(3) { animation-delay: 1s;}
+.wave:nth-child(4) { animation-delay: 1.5s;}
+.wave:nth-child(5) { animation-delay: 2s;}
+.wave:nth-child(6) { animation-delay: 2.5s;}
+.wave:nth-child(7) { animation-delay: 3s;}
+.wave:nth-child(8) { animation-delay: 3.5s;}
+.wave:nth-child(9) { animation-delay: 4s;}
+.wave:nth-child(10) { animation-delay: 4.5s;}
+.wave:nth-child(11) { animation-delay: 5s;}
+.wave:nth-child(12) { animation-delay: 5.5s;}
+.wave:nth-child(13) { animation-delay: 6s;}
+.wave:nth-child(14) { animation-delay: 6.5s;}
+.wave:nth-child(15) { animation-delay: 7s;}
+  
+  .a-name{
+    position: absolute;
+    left: 50px;
+    top: 576px;
+    font-style: italic;
+    font-size: 75px;
+    user-select: none;
+  }
+  
+  .b-name{
+    position: absolute;
+    left: 93px;
+    top: 605px;
+    font-size: 59px;
+    font-weight: 300;
+    user-select: none;
+  }
+  
+  .o-name{
+    position: absolute;
+    left: 123px;
+    top: 607px;
+    font-size:55px;
+    font-style: italic;
+    user-select: none;
+  }
+  
+  .u-name{
+    position: absolute;
+    left: 168px;
+    top: 595px;
+    font-size: 67px;
+    user-select: none;
+  }
+  
+  .t-name{
+    position:absolute;
+    left: 218px;
+    top: 600px;
+    font-size:64px;
+    font-weight: 400;
+    user-select: none;
+  }
+  
+  .v-name{
+    position: absolute;
+    left: 50px;
+    top: 667px;
+    font-size:65px;
+    user-select: none;
+  }
+  
+  .e-name{
+    position: absolute;
+    left: 110px;
+    top: 656px;
+    font-size: 64px;
+    user-select: none;
+  }
+  
+  .g-name{
+    position: absolute;
+    left: 143px;
+    top:662px;
+    font-size: 70px;
+    user-select: none;
+  }
+  
+  .e-name2{
+    position: absolute;
+    left: 183px;
+    top:671px;
+    font-size: 60px;
+    font-weight: 400;
+    user-select: none;
+  }
+  
+  .t-name2{
+    position: absolute;
+    left: 211px;
+    top: 670px;
+    font-size: 65px;
+    font-style: italic;
+    user-select: none;
+  }
+  
+  .a-name2{
+    position: absolute;
+    left: 259px;
+    top:665px;
+    font-size: 82px;
+    user-select: none;
+  }
+  
+  .b-name2{
+    position: absolute;
+    left: 288px;
+    top:675px;
+    font-size: 55px;
+    user-select: none;
+  }
+  
+  .l-name{
+    position: absolute;
+    left: 323px;
+    top:675px;
+    font-size:72px;
+    user-select: none;
+  }
+  
+  .e-name3{
+    position: absolute;
+    left: 349px;
+    top:670px;
+    font-size: 60px;
+    font-weight: 300;
+    user-select: none;
+  }
+  
+  .s-name{
+    position: absolute;
+    left: 385px;
+    top: 659px;
+    font-size: 59px;
+    user-select: none;
+  }
+  
+  .list-num{
+    font-weight: 700;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    border: solid 1.5px black;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    user-select: none;
+    margin-top: 3px;
+  }
+  
+  .list-font{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    user-select: none;
+  }
+  
+  .tomato-list{
+    position: absolute;
+    display: inline-block;
+    margin-left:575px;
+    margin-top: 605px;
+  }
+  
+  .potato-list{
+    position: absolute;
+    display: inline-block;
+    margin-left:575px;
+    margin-top: 635px;
+  }
+  
+  .parsley-list{
+    position: absolute;
+    display: inline-block;
+    margin-left:575px;
+    margin-top: 665px;
+  }
+  
+  .broccoli-list{
+    position: absolute;
+    display: inline-block;
+    margin-left:575px;
+    margin-top: 695px;
+  }
+  
+  .bellpepper-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 835px;
+    margin-top: 605px;
+  }
+  
+  .eggplant-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 835px;
+    margin-top: 635px;
+  }
+  
+  .mushroom-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 835px;
+    margin-top: 665px;
+  }
+  
+  .carrot-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 835px;
+    margin-top: 695px;
+  }
+  
+  .onion-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 1125px;
+    margin-top: 605px;
+  }
+  
+  .celery-list{
+    position: absolute;
+    display: inline-block;
+    margin-left: 1125px;
+    margin-top: 635px;
+  }
+  
+  a{
+    color: inherit;
+  }
+  
+  a:hover{
+    color: inherit;
+  }

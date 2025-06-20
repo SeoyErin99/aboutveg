@@ -1,0 +1,894 @@
+.header {
+    position: fixed;
+    top: -1px;
+    left:0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    padding: 10px 0;
+    padding-top: 25px;
+    border-bottom: solid 1.5px black;
+    align-items: center;
+}
+
+body{
+    padding-top: 60px;
+    user-select: none;
+    overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 2px;
+    border: 4px solid white;
+    border-radius: 50px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: #adadad;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #adadad;
+}
+
+.font-1 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.font-2 {
+    font-family: 'Pretendard', sans-serif;
+}
+  
+.font-3 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+  
+.font-4 {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.font-5 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.font-6 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+  
+.font-7 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-8{
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+}
+
+.font-9{
+    font-family: "PFStardust", sans-serif;
+}
+
+.a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.noline{
+    text-decoration: none;
+    color: black;
+}
+
+.please{
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    margin-left: -300px;
+}
+
+.menuline{
+    position: relative;
+    top: -3px;
+    left: -5px;
+    bottom:20px;
+}
+
+.webname{
+    position: relative;
+    top: -5px;
+    left:790px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.bg{
+    margin:0;
+    background-image: url('web/background.png');
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
+.bg-layer{
+    position: relative;
+    left: 20px;
+    top: 120px;
+}
+
+.lift{
+    transition: transform 0.3 ease;
+}
+  
+.lift:hover{
+    transform: translateY(-10px);
+}
+
+.where{
+    position: relative;
+    top: -812px;
+    left: 722px;
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    opacity: 0.4;
+}
+
+.eggplant-1{
+    position: relative;
+    left:150px;
+    top:-285px;
+    width: 250px;
+    height: auto;
+}
+
+.book{
+    position: relative;
+    left: 1037px;
+    top:-608px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.follow{
+    position: relative;
+    left: 1000px;
+    top: -850px;
+}
+
+.recipe{
+    position: relative;
+    left: 765px;
+    top: -842px;
+}
+
+.space{
+    position: relative;
+    padding-right: 15px;
+}
+
+.keywordbox{
+    position:relative;
+    background: white;
+    color: black;
+    padding: 3px 12px;
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: solid black 1.5px;
+}
+
+.it{
+    font-style: italic;
+}
+
+.box{
+    position: relative;
+    top: -535px;
+    left: -30px;
+}
+
+.name-e{
+    position: relative;
+    font-size: 65px;
+    top: -410px;
+    left: 250px;
+    font-weight:700;
+}
+
+.name-g1{
+    position: relative;
+    font-size: 70px;
+    top: -412px;
+    left: 250px;
+    font-weight: bold;
+}
+
+.name-g2{
+    position: relative;
+    font-size: 80px;
+    font-weight: 900;
+    top: -408px;
+    left: 255px;
+}
+
+.name-p{
+    position: relative;
+    font-size: 85px;
+    top:-400px;
+    left: 253px;
+}
+
+.name-l{
+    position: relative;
+    font-size: 75px;
+    top: -410px;
+    left: 246px;
+    font-weight:500;
+}
+
+.name-a{
+    position: relative;
+    font-size: 70px;
+    top: -412px;
+    left:248px;
+}
+
+.name-n{
+    position: relative;
+    font-size: 62px;
+    top: -413px;
+    left:252px;
+    font-weight:600;
+}
+
+.name-t{
+    position: relative;
+    font-size: 80px;
+    top: -412px;
+    left:253px;
+}
+
+.kr{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    top:-410px;
+    left:670px;
+}
+
+.plus{
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 1.2;
+    top:-395px;
+    left:-370px;
+}
+
+.next{
+    position: relative;
+    top: -365px;
+    left:1280px;
+    cursor: pointer;
+}
+
+.next2{
+    position: absolute;
+    top: 115px;
+    left:60px;
+    cursor: pointer;
+}
+
+.move{
+    transition: transform 0.3 ease;
+}
+
+.move:hover{
+    transform: translateX(10px);
+}
+
+.move2{
+    transition: transform 0.3 ease;
+}
+
+.move2:hover{
+    transform: translateX(-10px);
+}
+
+.nutrition{
+    position: absolute;
+    font-size: 17px;
+    top: 645px;
+    left: -162px;
+    line-height: 1;
+    width: 105%;
+    text-align: left;
+}
+
+.table{
+    padding-right: 270px;
+}
+
+.line{
+    position: absolute;
+    border: solid 1.2px black;
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 1250px;
+    left: 57px;
+    top:725px;
+}
+
+.num{
+    position:relative;
+    background: white;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-inline: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: solid black 1.5px;
+}
+
+.title{
+    position:relative;
+    background: white;
+    color: black;
+    padding-inline: 37px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 40px;
+    font-weight: 700;
+    border: solid black 1.5px;
+}
+
+.eggplant-2{
+    position: relative;
+    width: 400px;
+    height: auto;
+    top: -185px;
+    left: -20px;
+    z-index: 2;
+}
+
+.eggplant-10{
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: -270px;
+    left: 750px;
+    z-index: 1;
+}
+
+.info{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.one{
+    top:-540px;
+    left:-20px;
+}
+
+.two{
+    top: -480px;
+    left: 150px;
+}
+
+.three{
+    top: -490px;
+    left: -310px;
+}
+
+.second{
+    top: -400px;
+    left: 60px;
+}
+
+.first{
+    top: -490px;
+    left: 5px;
+}
+
+.third{
+    position: absolute;
+    top:1820px;
+    left: 400px;
+    width: 555px;
+    z-index: 3;
+}
+
+.e{
+    color:#42114b;
+    font-weight: 500;
+}
+
+.first-write{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    width: 700px;
+    top: -450px;
+    left: 400px;
+    line-height: 1.4;
+    text-align: right;
+}
+
+.eggplant-3{
+    position: relative;
+    width:120px;
+    height: auto;
+    left: 900px;
+    top:-350px;
+    z-index: 2;
+}
+
+.line2{
+    position: relative;
+    border: solid 1.2px black;
+    width: 850px;
+    top:-430px;
+    left: 130px;
+}
+
+.bellpepper-4{
+    position: relative;
+    width:450px;
+    height: auto;
+    left:785px;
+    top:-610px;
+    z-index: 3;
+}
+
+.talk3{
+    position: absolute;
+    top: 1810px;
+    left: 225px;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 3px;
+    z-index: 5;
+    transform: scaleY(83%);
+    text-align: center;
+    line-height: 1;
+}
+
+.second-write{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    width: 650px;
+    top: -350px;
+    left: 80px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.third-write{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    width: 780px;
+    top: -320px;
+    left: 300px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.third-write2{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    width: 850px;
+    top: -160px;
+    left: 370px;
+    line-height: 1.4;
+    text-align: right;
+}
+
+.bellpepper-5{
+    position: relative;
+    width:130px;
+    height: auto;
+    left:-370px;
+    top:-300px;
+    z-index: 2;
+}
+
+.bellpepper-6{
+    position: relative;
+    width:250px;
+    height: auto;
+    left:410px;
+    top:-296px;
+    z-index: 10;
+}
+
+.tttt{
+    position: relative;
+    width:140px;
+    height: auto;
+    left:-655px;
+    top:-385px;
+    z-index: 1;    
+}
+
+
+.line3{
+    position: relative;
+    border: solid 1.2px black;
+    top:-750px;
+    margin: 0 auto;
+    width: 1250px;
+    left: 7px;
+}
+
+.line5{
+    position: relative;
+    border: solid 1.2px black;
+    top:-500px;
+    margin: 0 auto;
+    width: 420px;
+    left: 25px;
+}
+
+.line4{
+    position: relative;
+    border: solid 1.2px black;
+    opacity: 0.4;
+    margin: 0 auto;
+    width: 1200px;
+    top:-250px
+}
+
+.go{
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    opacity: 0.5;
+    left: 580px;
+    top: 2380px;
+    width: fit-content;
+    height: auto;
+}
+
+.gogo{
+    position:relative;
+    background: white;
+    color: black;
+    padding-inline: 37px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 30px;
+    font-weight: 600;
+    border: solid black 1.5px;
+    top: -10px;
+    left: 450px;
+}
+
+.gogo:hover{
+    position:relative;
+    background: white;
+    color: black;
+    padding-inline: 39px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 32px;
+    font-weight: 600;
+    left: 430px;
+    border: solid black 1.5px;
+}
+
+.under{
+    position:absolute;
+    border: solid 1.2px black;
+    top: 2770px;
+    left:0;
+    margin: auto 0;
+    width: 99.9%;
+}
+
+.b1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.bottom1{
+    position: absolute;
+    font-weight: 300;
+    font-size: 18px;
+    left: 40px;
+    top: 2860px;
+    text-align: left;
+    width: fit-content;
+    opacity: 0.8;
+    padding-bottom: 40px;
+}
+
+.bottom2{
+    position: absolute;
+    font-weight: 300;
+    font-size: 18px;
+    left: 1100px;
+    top: 2860px;
+    text-align: right;
+    width: fit-content;
+    opacity: 0.8;
+}
+
+.bellpepper-7{
+    position: absolute;
+    z-index: 0;
+    left: 130px;
+    width: 110px;
+    height: auto;
+}
+
+.bellpepper-8{
+    position: absolute;
+    z-index: 0;
+    left: 280px;
+    width: 100px;
+    height: auto;
+}
+
+.bellpepper-9{
+    position: absolute;
+    z-index: 0;
+    left: 1050px;
+    width: 130px;
+    height: auto;
+}
+
+.float-1{
+    animation: float 3s ease-in-out infinite;
+}
+
+.float-2{
+    animation: float2 3s ease-in-out infinite;
+}
+
+.float-3{
+    animation: float3 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { top: 2500px; }
+    50% { top: 2470px; }
+    100% { top: 2500px; }
+}
+
+@keyframes float2 {
+    0% { top: 2290px; }
+    50% { top: 2310px; }
+    100% { top: 2290px; }
+}
+
+@keyframes float3 {
+    0% { top: 2390px; }
+    50% { top: 2410px; }
+    100% { top: 2390px; }
+}
+
+.open-btn {
+    font-size: 18px;
+    margin-top: -5px;
+    width: 50px;
+    margin-left: 25px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    z-index: -1;
+    background: none;
+    border: none;
+}
+
+.side-panel{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: -1px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+    box-shadow:300px 0px 500px rgba(255, 255, 255, 0.7);
+    border-right: solid black 1px;    
+}
+
+.side-panel a{
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.sideline{
+    border-bottom: solid black 1.5px;
+}
+
+.sideline1{
+    border-bottom: solid black 1.5px;
+    margin-bottom: 15px;
+}
+
+.side-panel a:hover {
+    background-color: #f0f0f0;
+}
+
+.look{
+    opacity: 0;
+}
+
+#spin:hover .look{
+    opacity: 1;
+}
+
+.spin1{
+    position: absolute;
+    left: 360px;
+    top: 192px
+}
+
+.spin2{
+    position: absolute;
+    left: 360px;
+    top: 237px
+}
+
+.spin3{
+    position: absolute;
+    left: 360px;
+    top: 285px
+}
+
+.spin4{
+    position: absolute;
+    left: 360px;
+    top: 335px
+}
+
+.spin5{
+    position: absolute;
+    left: 360px;
+    top: 382px
+}
+
+.spin6{
+    position: absolute;
+    left: 360px;
+    top: 430px
+}
+
+.spin7{
+    position: absolute;
+    left: 360px;
+    top: 477px
+}
+
+.spin8{
+    position: absolute;
+    left: 360px;
+    top: 527px
+}
+
+.spin9{
+    position: absolute;
+    left: 360px;
+    top: 575px
+}
+
+.spin10{
+    position: absolute;
+    left: 360px;
+    top: 623px
+}
+
+.sidehome{
+    position: absolute;
+    width: 37px;
+    height: auto;
+    top: 30px;
+    left: 30px;
+}
+
+.hat{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    top: 30px;
+    left: 100px;
+}
+
+.leaf{
+    position: absolute;
+    width: auto;
+    height: 42px;
+    left: 160px;
+    margin-top: -90px;
+}
+
+.close-btn3 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 20px;
+    transition: filter 0.3s ease;
+}
+
+.contname{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    padding-left: 20px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.contname2{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 40px;
+    opacity: 0.5;
+    margin-left: 200px;
+}
+
+.side-panel a.img-link:hover {
+  background-color: transparent;
+}
+
+.position{
+    margin-top: 20px;
+}
